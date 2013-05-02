@@ -1,0 +1,24 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "mdSubUnit",
+        "storeId": "StoreSubUnit",
+        "designer|userClassName": "StoreSubUnit",
+        "data": [
+            "\r",
+            "\r",
+            "[\r",
+            "    {code: '1',name: 'All'},\r",
+            " {code: '2',name: 'ผู้บริหาร ช.ส.ค.'},\r",
+            " {code: '3',name: 'ฝ่ายจัดการธนกิจ'},\r",
+            " {code: '4',name: 'ฝ่ายบริหารทั้วไป'}\r",
+            "    ]"
+        ]
+    },
+    "designerId": "aa3900e0-4183-4c53-b30b-88739a804f00"
+}

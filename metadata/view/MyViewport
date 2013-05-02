@@ -37,7 +37,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": 40
+                "designer|snapToGrid": 10,
+                "height": 40,
+                "layout": "absolute"
             },
             "designerId": "67686fb6-8206-41fe-9792-3e4f6f0ec494",
             "cn": [
@@ -49,6 +51,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|x": 70,
+                        "layout|y": -1,
                         "height": 30,
                         "id": "bt_addEmp",
                         "itemId": "bt_addEmp",
@@ -65,6 +69,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|x": 200,
+                        "layout|y": 0,
                         "height": 30,
                         "id": "bt_delEmp",
                         "itemId": "bt_delEmp",

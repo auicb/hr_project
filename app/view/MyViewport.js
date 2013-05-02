@@ -35,9 +35,14 @@ Ext.define('MyApp.view.MyViewport', {
                 {
                     xtype: 'container',
                     height: 40,
+                    layout: {
+                        type: 'absolute'
+                    },
                     items: [
                         {
                             xtype: 'button',
+                            x: 70,
+                            y: -1,
                             height: 30,
                             id: 'bt_addEmp',
                             itemId: 'bt_addEmp',
@@ -46,6 +51,8 @@ Ext.define('MyApp.view.MyViewport', {
                         },
                         {
                             xtype: 'button',
+                            x: 200,
+                            y: 0,
                             height: 30,
                             id: 'bt_delEmp',
                             itemId: 'bt_delEmp',

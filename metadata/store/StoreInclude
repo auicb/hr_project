@@ -1,0 +1,20 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "mdInclude",
+        "storeId": "StoreInclude",
+        "designer|userClassName": "StoreInclude",
+        "data": [
+            "[\t{code: '1', name: 'Current Employees Only'},\r",
+            "    {code: '2', name: 'Current and Past Employees'},\r",
+            "    {code: '3', name: 'Past Employees Only'}\t]"
+        ]
+    },
+    "designerId": "6993d0bf-be43-47ed-b1cf-b086ee0b969c"
+}

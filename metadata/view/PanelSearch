@@ -27,6 +27,9 @@
             "userConfig": {
                 "designer|snapToGrid": 10,
                 "height": 539,
+                "id": "formsearch",
+                "itemId": "formsearch",
+                "designer|displayName": "formsearchemp",
                 "layout": "absolute",
                 "bodyPadding": 10,
                 "glyph": null,
@@ -67,7 +70,13 @@
                         "fieldLabel": "Include",
                         "labelAlign": "top",
                         "name": "Include",
-                        "emptyText": null
+                        "emptyText": "Current Employees Only",
+                        "selectOnFocus": true,
+                        "displayField": "name",
+                        "forceSelection": true,
+                        "queryMode": "local",
+                        "store": "StoreInclude",
+                        "valueField": "code"
                     },
                     "designerId": "ac337d64-54c7-44be-90e2-79059052badc"
                 },
@@ -85,10 +94,14 @@
                         "fieldLabel": "Employment Status",
                         "labelAlign": "top",
                         "name": "EmploymentStatus",
-                        "emptyText": "All",
-                        "forceSelection": null,
+                        "emptyText": null,
+                        "selectOnFocus": true,
+                        "displayField": "name",
+                        "forceSelection": true,
                         "hiddenName": null,
-                        "valueField": null,
+                        "queryMode": "local",
+                        "store": "StoreEmploymentStatus",
+                        "valueField": "code",
                         "valueNotFoundText": null
                     },
                     "designerId": "9e0b857f-5f99-465e-be17-855a575c5005"
@@ -103,6 +116,8 @@
                     "userConfig": {
                         "layout|x": 380,
                         "layout|y": 10,
+                        "id": "idemp",
+                        "itemId": "idemp",
                         "width": 230,
                         "fieldLabel": "Id",
                         "labelAlign": "top",
@@ -143,7 +158,13 @@
                         "fieldLabel": "Job Title",
                         "labelAlign": "top",
                         "name": "JobTitle",
-                        "emptyText": null
+                        "emptyText": "All",
+                        "selectOnFocus": true,
+                        "displayField": "name",
+                        "forceSelection": true,
+                        "queryMode": "local",
+                        "store": "StoreJobTitle",
+                        "valueField": "code"
                     },
                     "designerId": "c441fbe1-96c4-4b20-bee0-66df50fc4cd7"
                 },
@@ -161,7 +182,13 @@
                         "fieldLabel": "Sub Unit",
                         "labelAlign": "top",
                         "name": "SubUnit",
-                        "emptyText": null
+                        "emptyText": "All",
+                        "selectOnFocus": true,
+                        "displayField": "name",
+                        "forceSelection": true,
+                        "queryMode": "local",
+                        "store": "StoreSubUnit",
+                        "valueField": "code"
                     },
                     "designerId": "b5a719b6-a533-4132-8300-7a4bd51568d2"
                 },
@@ -176,6 +203,8 @@
                         "layout|x": 70,
                         "layout|y": 150,
                         "height": 30,
+                        "id": "bt_SearchEmp",
+                        "itemId": "bt_SearchEmp",
                         "width": 90,
                         "text": "Search"
                     },
@@ -192,6 +221,8 @@
                         "layout|x": 200,
                         "layout|y": 150,
                         "height": 30,
+                        "id": "bt_ResetEmp",
+                        "itemId": "bt_ResetEmp",
                         "width": 90,
                         "text": "Reset"
                     },

@@ -83,6 +83,70 @@ Ext.define('MyApp.controller.MyController', {
         }
     },
 
+    onSearchEmp: function(button, e, eOpts) {
+
+        console.log('Controll----------SearchEmp');
+
+        /*var searchValue = Ext.getCmp('formsearch');
+        console.log(searchValue);
+        store.load();*/
+
+        /*
+        var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        Store.load();*/
+
+
+        /*var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        var data = ["firstName", "empId"]
+        console.log(data);
+        Store.loadData(data);*/
+
+
+        /*   Ext.getCmp('formsearch');
+        var data = grid.getSelectionModel().selected.items[0].data;
+
+        console.log(data);
+        store.clearFilter();
+        store.filter('mygridpanel', data.productsCat);
+        */
+
+
+        /*var Store = Ext.getStore('StoreEmp');
+        console.log(Store);
+        var grid = Ext.getCmp('mygridpanel');
+
+        store.filterBy(id); 
+        Store.load();*/
+
+
+
+        var Store = Ext.getStore('StoreEmp');
+
+        Store.filter('empId', Ext.getCmp('idemp').getValue());
+
+
+
+
+
+
+
+
+
+
+
+    },
+
+    onResetSearchEmp: function(button, e, eOpts) {
+        console.log('Controll----------ResetSearchEmp');
+
+
+
+        Ext.getCmp('formsearch').getForm().reset(); 
+
+    },
+
     init: function(application) {
         this.control({
             "#bt_addEmp": {
@@ -96,6 +160,12 @@ Ext.define('MyApp.controller.MyController', {
             },
             "#bt_delEmp": {
                 click: this.onSelectGriddeletedata
+            },
+            "#bt_SearchEmp": {
+                click: this.onSearchEmp
+            },
+            "#bt_ResetEmp": {
+                click: this.onResetSearchEmp
             }
         });
     }

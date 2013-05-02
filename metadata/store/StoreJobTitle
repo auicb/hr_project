@@ -1,0 +1,22 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "mdJobTitle",
+        "storeId": "StoreJobTitle",
+        "designer|userClassName": "StoreJobTitle",
+        "data": [
+            "[{code: '1',name: 'All'},\r",
+            " {code: '2',name: 'เจ้าหน้าที่สินเชื่อ'},\r",
+            " {code: '3',name: 'เลขานุการ'},\r",
+            " {code: '4',name: 'เจ้าหน้าที่บุคคล'}\r",
+            " ]"
+        ]
+    },
+    "designerId": "0c39d722-8f6a-4482-8e6b-2caf1b9a044f"
+}

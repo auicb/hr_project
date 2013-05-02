@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "data/empStore.json"
+                "url": "../hr_project/data/empStore.json"
             },
             "designerId": "bb5cb61b-5336-4f4d-bbaf-5c6ec45b2657",
             "cn": [
