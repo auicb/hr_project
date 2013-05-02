@@ -1,0 +1,147 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "4e90cb52-bbd1-4049-adaf-bc01ad9e2706",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onOpenWindowEmp",
+                "implHandler": [
+                    "console.log(\"Open Window AddEmp\");\r",
+                    "var win = Ext.create('widget.windowAddEmp');\r",
+                    "win.show();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_addEmp"
+            },
+            "designerId": "00fd29d9-2432-4fcc-a5a5-d58c005b9d00"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddEmployee",
+                "implHandler": [
+                    "console.log(\"Controll----------onPanelAdd Emp\");\r",
+                    "\r",
+                    "var form = Ext.getCmp('formemp'),\r",
+                    "    value = form.getValues(),\r",
+                    "    store = Ext.getStore('StoreEmp');\r",
+                    "\r",
+                    "addstore = store.add(value);\r",
+                    "console.log(value);\r",
+                    "store.sync();\r",
+                    "//Ext.getCmp('mygridpanel').reconfigure();\r",
+                    "\r",
+                    "if (addstore) {\r",
+                    "    this.getWindowAddEmp().destroy();\r",
+                    "}\r",
+                    "\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_saveEmpAdd"
+            },
+            "designerId": "51e302b8-7e7d-4a97-bad6-2300793c9536"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddEmployeeClose",
+                "implHandler": [
+                    "this.getWindowAddEmp().destroy();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_closeEmpAdd"
+            },
+            "designerId": "bac4ed5b-291e-4e6d-b92c-e5f10a72ebc2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "windowAddEmp",
+                "selector": "windowAddEmp"
+            },
+            "designerId": "5c6d4e8b-cd7c-47e0-ab0d-509c86ced9dd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSelectGriddeletedata",
+                "implHandler": [
+                    "console.log('Controll----------Delete');\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "/*var grid = Ext.getCmp('grid'),\r",
+                    "arraySelected =grid.getSelectionModel().getSelection(),\r",
+                    "\r",
+                    "//assuming you have a single select, you have the record at index 0;\r",
+                    "\r",
+                    "record = arraySelected[0];\r",
+                    "console.log(arraySelected);\r",
+                    "*/\r",
+                    "\r",
+                    "\r",
+                    "//var grid = Ext.getCmp('grid');\r",
+                    "// var selected = grid.getSelectionModel().getSelection()[0];\r",
+                    "\r",
+                    "//   grid.getStore().remove(selected);\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "var grid = Ext.getCmp('mygridpanel');\r",
+                    "var arraySelected = grid.getSelectionModel().getSelection();\r",
+                    "if (arraySelected) {\r",
+                    "    grid.getStore().remove(arraySelected );\r",
+                    "}"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_delEmp"
+            },
+            "designerId": "9b9ad27b-1eed-45bd-892d-42c580b7c087"
+        }
+    ]
+}

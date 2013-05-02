@@ -1,0 +1,28 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "mdStatus"
+        ],
+        "stores": [
+            "StoreEmp",
+            "StoreStatus"
+        ],
+        "views": [
+            "MyViewport",
+            "MyGridPanel",
+            "WindowAddEmp"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "MyController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

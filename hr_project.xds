@@ -1,0 +1,124 @@
+{
+    "name": "hr_project",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 971,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "d2c14d8c-5105-45df-83d7-89bce3313202": {
+            "paths": [
+                "metadata/view/PanelSearch",
+                "app/view/override/PanelSearch.js",
+                "app/view/PanelSearch.js"
+            ],
+            "className": "PanelSearch"
+        },
+        "c651df90-ec62-4eb0-a4b4-9cd6c27d7932": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "432065b7-5ecd-4df9-b470-66032434d4de": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "f413509b-4b17-48b1-8747-7cc966c69ffa": {
+            "paths": [
+                "metadata/model/mdEmployee",
+                "app/model/override/mdEmployee.js",
+                "app/model/mdEmployee.js"
+            ],
+            "className": "mdEmployee"
+        },
+        "0ce7c3ea-2871-41a7-a00d-aa3cbcb3b427": {
+            "paths": [
+                "metadata/model/mdEmployeeAll",
+                "app/model/override/mdEmployeeAll.js",
+                "app/model/mdEmployeeAll.js"
+            ],
+            "className": "mdEmployeeAll"
+        },
+        "7847cf2e-d98e-4074-82c2-67a2925f03da": {
+            "paths": [
+                "metadata/store/StoreEmp",
+                "app/store/override/StoreEmp.js",
+                "app/store/StoreEmp.js"
+            ],
+            "className": "StoreEmp"
+        },
+        "d1b68ad2-296d-47e0-87cc-39e98349b144": {
+            "paths": [
+                "metadata/view/MyGridPanel",
+                "app/view/override/MyGridPanel.js",
+                "app/view/MyGridPanel.js"
+            ],
+            "className": "MyGridPanel"
+        },
+        "b0a0b977-8370-4416-b6e9-8593f04c51ba": {
+            "paths": [
+                "metadata/view/WindowAddEmp",
+                "app/view/override/WindowAddEmp.js",
+                "app/view/WindowAddEmp.js"
+            ],
+            "className": "WindowAddEmp"
+        },
+        "4e90cb52-bbd1-4049-adaf-bc01ad9e2706": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        },
+        "22c6e8c4-8f02-4d9b-9f21-b27f27b56472": {
+            "paths": [
+                "metadata/store/StoreStatus",
+                "app/store/override/StoreStatus.js",
+                "app/store/StoreStatus.js"
+            ],
+            "className": "StoreStatus"
+        },
+        "e5b61d9b-bdb9-446d-a01b-abdb19afdc64": {
+            "paths": [
+                "metadata/model/mdStatus",
+                "app/model/override/mdStatus.js",
+                "app/model/mdStatus.js"
+            ],
+            "className": "mdStatus"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "d2c14d8c-5105-45df-83d7-89bce3313202",
+            "d1b68ad2-296d-47e0-87cc-39e98349b144",
+            "432065b7-5ecd-4df9-b470-66032434d4de",
+            "b0a0b977-8370-4416-b6e9-8593f04c51ba"
+        ],
+        "store": [
+            "7847cf2e-d98e-4074-82c2-67a2925f03da",
+            "22c6e8c4-8f02-4d9b-9f21-b27f27b56472"
+        ],
+        "controller": [
+            "4e90cb52-bbd1-4049-adaf-bc01ad9e2706"
+        ],
+        "model": [
+            "f413509b-4b17-48b1-8747-7cc966c69ffa",
+            "0ce7c3ea-2871-41a7-a00d-aa3cbcb3b427",
+            "e5b61d9b-bdb9-446d-a01b-abdb19afdc64"
+        ],
+        "resource": [
+            "c651df90-ec62-4eb0-a4b4-9cd6c27d7932"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

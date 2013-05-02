@@ -1,0 +1,203 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "stateful": true,
+        "height": 464,
+        "width": null,
+        "designer|userClassName": "PanelSearch",
+        "designer|userAlias": "panelsearch",
+        "layout": "absolute",
+        "title": "Employee Information"
+    },
+    "designerId": "d2c14d8c-5105-45df-83d7-89bce3313202",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 539,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "glyph": null,
+                "title": null
+            },
+            "designerId": "8e228a59-be04-4629-885f-b518a8912912",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 70,
+                        "layout|y": 10,
+                        "width": 220,
+                        "designer|createAlias": null,
+                        "fieldLabel": "Employee Name",
+                        "labelAlign": "top",
+                        "name": "EmployeeName",
+                        "emptyText": "Type for hints.."
+                    },
+                    "designerId": "0decbfdf-4aaa-4b54-876d-467c971d5bc2"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 1040,
+                        "layout|y": 10,
+                        "width": 220,
+                        "fieldLabel": "Include",
+                        "labelAlign": "top",
+                        "name": "Include",
+                        "emptyText": null
+                    },
+                    "designerId": "ac337d64-54c7-44be-90e2-79059052badc"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 700,
+                        "layout|y": 10,
+                        "width": 240,
+                        "fieldLabel": "Employment Status",
+                        "labelAlign": "top",
+                        "name": "EmploymentStatus",
+                        "emptyText": "All",
+                        "forceSelection": null,
+                        "hiddenName": null,
+                        "valueField": null,
+                        "valueNotFoundText": null
+                    },
+                    "designerId": "9e0b857f-5f99-465e-be17-855a575c5005"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 380,
+                        "layout|y": 10,
+                        "width": 230,
+                        "fieldLabel": "Id",
+                        "labelAlign": "top",
+                        "name": "Id",
+                        "emptyText": "Type Employee Id..."
+                    },
+                    "designerId": "68689619-e310-4cb7-8510-2dc1fac61a8d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 70,
+                        "layout|y": 70,
+                        "width": 220,
+                        "fieldLabel": "Supervisor Name",
+                        "labelAlign": "top",
+                        "name": "SupervisorName",
+                        "emptyText": "Type for hints.."
+                    },
+                    "designerId": "eb3a5aa4-9a5d-4aa7-8865-5dffe39c0deb"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 380,
+                        "layout|y": 70,
+                        "width": 230,
+                        "fieldLabel": "Job Title",
+                        "labelAlign": "top",
+                        "name": "JobTitle",
+                        "emptyText": null
+                    },
+                    "designerId": "c441fbe1-96c4-4b20-bee0-66df50fc4cd7"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 700,
+                        "layout|y": 70,
+                        "width": 240,
+                        "fieldLabel": "Sub Unit",
+                        "labelAlign": "top",
+                        "name": "SubUnit",
+                        "emptyText": null
+                    },
+                    "designerId": "b5a719b6-a533-4132-8300-7a4bd51568d2"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 70,
+                        "layout|y": 150,
+                        "height": 30,
+                        "width": 90,
+                        "text": "Search"
+                    },
+                    "designerId": "c9a54d04-ae38-4996-af4f-f7ff18b8ed04"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 200,
+                        "layout|y": 150,
+                        "height": 30,
+                        "width": 90,
+                        "text": "Reset"
+                    },
+                    "designerId": "b733094e-3532-4e28-8b9c-4604350f01df"
+                }
+            ]
+        }
+    ]
+}

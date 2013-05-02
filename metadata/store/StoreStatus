@@ -1,0 +1,25 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "mdStatus",
+        "storeId": "StoreStatus",
+        "designer|userClassName": "StoreStatus",
+        "data": [
+            "[\t{\r",
+            "        code: '1',\r",
+            "        name: 'enabled'\r",
+            "    }, {\r",
+            "        code: '0',\r",
+            "        name: 'disabled'\r",
+            "    }\r",
+            "]"
+        ]
+    },
+    "designerId": "22c6e8c4-8f02-4d9b-9f21-b27f27b56472"
+}

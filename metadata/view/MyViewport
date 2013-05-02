@@ -1,0 +1,89 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": null,
+        "itemId": null,
+        "designer|userClassName": "MyViewport",
+        "designer|userAlias": null,
+        "designer|initialView": true
+    },
+    "designerId": "432065b7-5ecd-4df9-b470-66032434d4de",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 235,
+                "collapseDirection": "top",
+                "collapsible": true
+            },
+            "designerId": "0ec3b59f-f998-4295-a4c9-25b3d98d316e",
+            "masterInstanceId": "d2c14d8c-5105-45df-83d7-89bce3313202"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 40
+            },
+            "designerId": "67686fb6-8206-41fe-9792-3e4f6f0ec494",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 30,
+                        "id": "bt_addEmp",
+                        "itemId": "bt_addEmp",
+                        "width": 90,
+                        "text": "Add"
+                    },
+                    "designerId": "6e77c6a9-8f23-4064-bcf1-fb85885d31d9"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 30,
+                        "id": "bt_delEmp",
+                        "itemId": "bt_delEmp",
+                        "width": 90,
+                        "text": "Delete"
+                    },
+                    "designerId": "bd18e4ba-a0ec-4681-b2fe-27501d45a044"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "0089a4de-03ba-49c1-90fa-bdd632ff3b43",
+            "masterInstanceId": "d1b68ad2-296d-47e0-87cc-39e98349b144"
+        }
+    ]
+}

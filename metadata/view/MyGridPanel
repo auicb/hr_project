@@ -1,0 +1,121 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "id": "mygridpanel",
+        "itemId": "mygridpanel",
+        "width": null,
+        "designer|userClassName": "MyGridPanel",
+        "designer|userAlias": "mygridpanel",
+        "title": "My Grid Panel",
+        "store": "StoreEmp"
+    },
+    "designerId": "d1b68ad2-296d-47e0-87cc-39e98349b144",
+    "cn": [
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "113117e8-230d-4faa-a59c-94e6681917f1"
+        },
+        {
+            "type": "Ext.grid.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 50,
+                "align": "center"
+            },
+            "designerId": "c32e9daa-4faf-4072-a363-f946461b17e7"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "empId",
+                "text": "Emp Id"
+            },
+            "designerId": "f70c3d88-4b73-4bba-915b-01b69aaf582f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "firstName",
+                "text": "First Name"
+            },
+            "designerId": "3c8325af-82aa-47dc-926f-8fb2451d13db"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "middleName",
+                "text": "Middle Name"
+            },
+            "designerId": "005dc4c2-cb92-4998-8620-4a9779e0135c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "lastName",
+                "text": "Last Name"
+            },
+            "designerId": "9ead2eec-5511-405e-9f5c-844f5b8e5e03"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "status",
+                "text": "Status"
+            },
+            "designerId": "dbae5606-eb74-4b37-8993-9d9fac36fd7c"
+        },
+        {
+            "type": "Ext.selection.CheckboxModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.CheckboxModel",
+            "userConfig": {
+                "showHeaderCheckbox": true
+            },
+            "designerId": "8b4299de-bf09-4d1e-9846-d73b61a741f6"
+        }
+    ]
+}
