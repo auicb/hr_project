@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "style.css"
+    },
+    "designerId": "d0ac6144-aad4-4ef0-b48b-ca5a10c1849f"
+}

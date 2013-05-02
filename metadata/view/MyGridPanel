@@ -6,13 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "cls": null,
         "height": 250,
         "id": "mygridpanel",
         "itemId": "mygridpanel",
         "width": null,
         "designer|userClassName": "MyGridPanel",
         "designer|userAlias": "mygridpanel",
-        "title": "My Grid Panel",
+        "title": null,
         "store": "StoreEmp"
     },
     "designerId": "d1b68ad2-296d-47e0-87cc-39e98349b144",
@@ -24,7 +25,23 @@
                 "type": "object"
             },
             "codeClass": null,
+            "userConfig": {
+                "cls": null
+            },
             "designerId": "113117e8-230d-4faa-a59c-94e6681917f1"
+        },
+        {
+            "type": "Ext.selection.CheckboxModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.CheckboxModel",
+            "userConfig": {
+                "designer|createClass": null,
+                "showHeaderCheckbox": true
+            },
+            "designerId": "8b4299de-bf09-4d1e-9846-d73b61a741f6"
         },
         {
             "type": "Ext.grid.RowNumberer",
@@ -34,8 +51,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
+                "overCls": null,
                 "width": 50,
-                "align": "center"
+                "align": "center",
+                "tdCls": null
             },
             "designerId": "c32e9daa-4faf-4072-a363-f946461b17e7"
         },
@@ -47,6 +67,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
+                "overCls": null,
                 "align": "center",
                 "dataIndex": "empId",
                 "text": "Emp Id"
@@ -61,6 +83,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
+                "overCls": null,
                 "dataIndex": "firstName",
                 "text": "First Name"
             },
@@ -74,6 +98,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
                 "dataIndex": "middleName",
                 "text": "Middle Name"
             },
@@ -87,6 +112,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
                 "dataIndex": "lastName",
                 "text": "Last Name"
             },
@@ -100,22 +126,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "grid_header",
                 "dataIndex": "status",
                 "text": "Status"
             },
             "designerId": "dbae5606-eb74-4b37-8993-9d9fac36fd7c"
-        },
-        {
-            "type": "Ext.selection.CheckboxModel",
-            "reference": {
-                "name": "selModel",
-                "type": "object"
-            },
-            "codeClass": "Ext.selection.CheckboxModel",
-            "userConfig": {
-                "showHeaderCheckbox": true
-            },
-            "designerId": "8b4299de-bf09-4d1e-9846-d73b61a741f6"
         }
     ]
 }

@@ -45,12 +45,13 @@
                     "\r",
                     "var form = Ext.getCmp('formemp'),\r",
                     "    value = form.getValues(),\r",
-                    "    store = Ext.getStore('StoreEmp');\r",
+                    "    store = Ext.getStore('StoreEmp'),\r",
+                    "    addstore = store.add(value);\r",
                     "\r",
-                    "addstore = store.add(value);\r",
-                    "console.log(value);\r",
-                    "store.sync();\r",
-                    "//Ext.getCmp('mygridpanel').reconfigure();\r",
+                    "//console.log(value);\r",
+                    "//store.sync();\r",
+                    "store.commitChanges();\r",
+                    "Ext.getCmp('mygridpanel').reconfigure();\r",
                     "\r",
                     "if (addstore) {\r",
                     "    this.getWindowAddEmp().destroy();\r",
@@ -142,6 +143,53 @@
                 "designer|controlQuery": "#bt_delEmp"
             },
             "designerId": "9b9ad27b-1eed-45bd-892d-42c580b7c087"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddCombobox",
+                "implHandler": [
+                    "/*var combo = Ext.getCmp('status_combo');\r",
+                    "combo.setValue(\"1\");*/\r",
+                    "var combo = Ext.getCmp('status_combo'),\r",
+                    "    store = Ext.getStore('StoreStatus'),\r",
+                    "    //val =  store.getAt(0).get('code');\r",
+                    "    val =  store.first().data.code;\r",
+                    "\r",
+                    "this.loadCombobox(combo,val);"
+                ],
+                "name": "afterrender",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "windowAddEmp #status_combo"
+            },
+            "designerId": "46e24eba-d59a-4b78-b28b-15b2d9b18d39"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadCombobox",
+                "designer|params": [
+                    "combo",
+                    "val"
+                ],
+                "implHandler": [
+                    "console.log(\"Controll----------afterlender combobox\");\r",
+                    "\r",
+                    "combo.setValue(val);"
+                ]
+            },
+            "designerId": "4eb15170-3ce4-40bf-8f45-282755da0fc0"
         }
     ]
 }

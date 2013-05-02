@@ -29,10 +29,13 @@ Ext.define('MyApp.store.StoreEmp', {
             storeId: 'StoreEmp',
             proxy: {
                 type: 'ajax',
-                url: 'data/empStore.json',
+                url: '../hr_project/data/empStore.json',
                 reader: {
                     type: 'json',
                     root: 'data.records'
+                },
+                writer: {
+                    type: 'json'
                 }
             }
         }, cfg)]);

@@ -16,7 +16,10 @@
         "views": [
             "MyViewport",
             "MyGridPanel",
-            "WindowAddEmp"
+            "WindowAddEmp",
+            "MyTabPanel",
+            "HeaderPanel",
+            "MyViewport1"
         ],
         "autoCreateViewport": true,
         "controllers": [

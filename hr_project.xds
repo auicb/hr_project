@@ -93,6 +93,36 @@
                 "app/model/mdStatus.js"
             ],
             "className": "mdStatus"
+        },
+        "d0ac6144-aad4-4ef0-b48b-ca5a10c1849f": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "cf558478-3390-444e-8032-d9b00e1f47ef": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        },
+        "4c63da0a-95a7-4c09-866e-67033debff8d": {
+            "paths": [
+                "metadata/view/HeaderPanel",
+                "app/view/override/HeaderPanel.js",
+                "app/view/HeaderPanel.js"
+            ],
+            "className": "HeaderPanel"
+        },
+        "6cddb774-5562-4129-a62e-203a13b1be50": {
+            "paths": [
+                "metadata/view/MyViewport1",
+                "app/view/override/MyViewport1.js",
+                "app/view/MyViewport1.js"
+            ],
+            "className": "MyViewport1"
         }
     },
     "viewOrderMap": {
@@ -100,7 +130,10 @@
             "d2c14d8c-5105-45df-83d7-89bce3313202",
             "d1b68ad2-296d-47e0-87cc-39e98349b144",
             "432065b7-5ecd-4df9-b470-66032434d4de",
-            "b0a0b977-8370-4416-b6e9-8593f04c51ba"
+            "b0a0b977-8370-4416-b6e9-8593f04c51ba",
+            "4c63da0a-95a7-4c09-866e-67033debff8d",
+            "cf558478-3390-444e-8032-d9b00e1f47ef",
+            "6cddb774-5562-4129-a62e-203a13b1be50"
         ],
         "store": [
             "7847cf2e-d98e-4074-82c2-67a2925f03da",
@@ -115,7 +148,8 @@
             "e5b61d9b-bdb9-446d-a01b-abdb19afdc64"
         ],
         "resource": [
-            "c651df90-ec62-4eb0-a4b4-9cd6c27d7932"
+            "c651df90-ec62-4eb0-a4b4-9cd6c27d7932",
+            "d0ac6144-aad4-4ef0-b48b-ca5a10c1849f"
         ],
         "app": [
             "application"

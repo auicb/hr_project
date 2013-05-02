@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "data/empStore.json"
+                "url": "../hr_project/data/empStore.json"
             },
             "designerId": "bb5cb61b-5336-4f4d-bbaf-5c6ec45b2657",
             "cn": [
@@ -37,6 +37,15 @@
                         "root": "data.records"
                     },
                     "designerId": "48c052b8-995b-4887-9d11-154feb2d1ce4"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "9748a15e-8132-4471-9ed1-f934f14cce1b"
                 }
             ]
         }

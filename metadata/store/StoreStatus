@@ -15,7 +15,7 @@
             "        code: '1',\r",
             "        name: 'enabled'\r",
             "    }, {\r",
-            "        code: '0',\r",
+            "        code: '2',\r",
             "        name: 'disabled'\r",
             "    }\r",
             "]"

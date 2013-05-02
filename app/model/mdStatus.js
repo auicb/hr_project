@@ -18,10 +18,12 @@ Ext.define('MyApp.model.mdStatus', {
 
     fields: [
         {
-            name: 'code'
+            name: 'code',
+            type: 'int'
         },
         {
-            name: 'name'
+            name: 'name',
+            type: 'string'
         }
     ]
 });

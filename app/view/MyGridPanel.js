@@ -20,49 +20,54 @@ Ext.define('MyApp.view.MyGridPanel', {
     height: 250,
     id: 'mygridpanel',
     itemId: 'mygridpanel',
-    title: 'My Grid Panel',
     store: 'StoreEmp',
 
     initComponent: function() {
         var me = this;
 
         Ext.applyIf(me, {
+            selModel: Ext.create('Ext.selection.CheckboxModel', {
+                showHeaderCheckbox: true
+            }),
             columns: [
                 {
                     xtype: 'rownumberer',
+                    cls: 'grid_header',
                     width: 50,
                     align: 'center'
                 },
                 {
                     xtype: 'gridcolumn',
+                    cls: 'grid_header',
                     align: 'center',
                     dataIndex: 'empId',
                     text: 'Emp Id'
                 },
                 {
                     xtype: 'gridcolumn',
+                    cls: 'grid_header',
                     dataIndex: 'firstName',
                     text: 'First Name'
                 },
                 {
                     xtype: 'gridcolumn',
+                    cls: 'grid_header',
                     dataIndex: 'middleName',
                     text: 'Middle Name'
                 },
                 {
                     xtype: 'gridcolumn',
+                    cls: 'grid_header',
                     dataIndex: 'lastName',
                     text: 'Last Name'
                 },
                 {
                     xtype: 'gridcolumn',
+                    cls: 'grid_header',
                     dataIndex: 'status',
                     text: 'Status'
                 }
-            ],
-            selModel: Ext.create('Ext.selection.CheckboxModel', {
-                showHeaderCheckbox: true
-            })
+            ]
         });
 
         me.callParent(arguments);

@@ -18,7 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "code"
+                "name": "code",
+                "type": "int"
             },
             "designerId": "36223c4c-ba13-41ed-a030-aa86bedfa8ca"
         },
@@ -30,7 +31,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name"
+                "name": "name",
+                "type": "string"
             },
             "designerId": "63e08e4d-80b5-4275-92b5-8db15b48c285"
         }

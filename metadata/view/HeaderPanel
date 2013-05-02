@@ -1,0 +1,19 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stateful": true,
+        "height": 90,
+        "id": "headerPanel",
+        "itemId": "headerPanel",
+        "width": null,
+        "designer|userClassName": "HeaderPanel",
+        "designer|userAlias": "headerPanel",
+        "title": null
+    },
+    "designerId": "4c63da0a-95a7-4c09-866e-67033debff8d"
+}

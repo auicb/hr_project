@@ -17,7 +17,7 @@ Ext.define('MyApp.view.WindowAddEmp', {
     extend: 'Ext.window.Window',
     alias: 'widget.windowAddEmp',
 
-    width: 700,
+    width: 600,
     title: 'Add Employee',
 
     initComponent: function() {
@@ -32,25 +32,47 @@ Ext.define('MyApp.view.WindowAddEmp', {
                     bodyPadding: 10,
                     items: [
                         {
-                            xtype: 'textfield',
-                            width: 350,
-                            fieldLabel: 'First Name',
+                            xtype: 'fieldcontainer',
+                            layout: {
+                                type: 'hbox'
+                            },
+                            fieldLabel: 'Full Name',
+                            labelStyle: 'font-weight:bold;padding:0;',
                             labelWidth: 150,
-                            name: 'firstName'
-                        },
-                        {
-                            xtype: 'textfield',
-                            width: 350,
-                            fieldLabel: 'Middle Name',
-                            labelWidth: 150,
-                            name: 'middleName'
-                        },
-                        {
-                            xtype: 'textfield',
-                            width: 350,
-                            fieldLabel: 'Last Name',
-                            labelWidth: 150,
-                            name: 'lastName'
+                            items: [
+                                {
+                                    xtype: 'textfield',
+                                    flex: 1,
+                                    maxWidth: 160,
+                                    width: 160,
+                                    fieldLabel: 'First Name',
+                                    labelAlign: 'top',
+                                    labelWidth: 160,
+                                    name: 'firstName',
+                                    allowBlank: false
+                                },
+                                {
+                                    xtype: 'textfield',
+                                    margin: '0 0 0 5',
+                                    width: 90,
+                                    fieldLabel: 'Middle Name',
+                                    labelAlign: 'top',
+                                    labelWidth: 0,
+                                    name: 'middleName'
+                                },
+                                {
+                                    xtype: 'textfield',
+                                    flex: 2,
+                                    margin: '0 0 0 5',
+                                    maxWidth: 160,
+                                    width: 160,
+                                    fieldLabel: 'Last Name',
+                                    labelAlign: 'top',
+                                    labelWidth: 0,
+                                    name: 'lastName',
+                                    allowBlank: false
+                                }
+                            ]
                         },
                         {
                             xtype: 'textfield',
@@ -95,6 +117,8 @@ Ext.define('MyApp.view.WindowAddEmp', {
                         },
                         {
                             xtype: 'combobox',
+                            id: 'status_combo',
+                            itemId: 'status_combo',
                             width: 300,
                             fieldLabel: 'Status',
                             labelWidth: 150,

@@ -34,12 +34,13 @@ Ext.define('MyApp.controller.MyController', {
 
         var form = Ext.getCmp('formemp'),
             value = form.getValues(),
-            store = Ext.getStore('StoreEmp');
+            store = Ext.getStore('StoreEmp'),
+            addstore = store.add(value);
 
-        addstore = store.add(value);
-        console.log(value);
-        store.sync();
-        //Ext.getCmp('mygridpanel').reconfigure();
+        //console.log(value);
+        //store.sync();
+        store.commitChanges();
+        Ext.getCmp('mygridpanel').reconfigure();
 
         if (addstore) {
             this.getWindowAddEmp().destroy();
@@ -83,6 +84,23 @@ Ext.define('MyApp.controller.MyController', {
         }
     },
 
+    onAddCombobox: function(component, eOpts) {
+        /*var combo = Ext.getCmp('status_combo');
+        combo.setValue("1");*/
+        var combo = Ext.getCmp('status_combo'),
+            store = Ext.getStore('StoreStatus'),
+            //val =  store.getAt(0).get('code');
+            val =  store.first().data.code;
+
+        this.loadCombobox(combo,val);
+    },
+
+    loadCombobox: function(combo, val) {
+        console.log("Controll----------afterlender combobox");
+
+        combo.setValue(val);
+    },
+
     init: function(application) {
         this.control({
             "#bt_addEmp": {
@@ -96,6 +114,9 @@ Ext.define('MyApp.controller.MyController', {
             },
             "#bt_delEmp": {
                 click: this.onSelectGriddeletedata
+            },
+            "windowAddEmp #status_combo": {
+                afterrender: this.onAddCombobox
             }
         });
     }

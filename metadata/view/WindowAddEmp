@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "height": null,
-        "width": 700,
+        "width": 600,
         "designer|userClassName": "WindowAddEmp",
         "designer|userAlias": "windowAddEmp",
         "title": "Add Employee"
@@ -30,52 +30,83 @@
             "designerId": "21255d70-b887-4dc1-b26a-33a6d29ac93c",
             "cn": [
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.form.FieldContainer",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": null,
-                        "width": 350,
-                        "fieldLabel": "First Name",
-                        "labelWidth": 150,
-                        "name": "firstName"
+                        "formBind": null,
+                        "container|align": null,
+                        "height": null,
+                        "layout": "hbox",
+                        "fieldDefaults": null,
+                        "fieldLabel": "Full Name",
+                        "labelStyle": "font-weight:bold;padding:0;",
+                        "labelWidth": 150
                     },
-                    "designerId": "fb56f402-c201-43a6-93d7-60d91b86f7f0"
-                },
-                {
-                    "type": "Ext.form.field.Text",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|anchor": null,
-                        "width": 350,
-                        "fieldLabel": "Middle Name",
-                        "labelWidth": 150,
-                        "name": "middleName"
-                    },
-                    "designerId": "41093987-620d-4751-97f8-807d05af39ba"
-                },
-                {
-                    "type": "Ext.form.field.Text",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|anchor": null,
-                        "width": 350,
-                        "fieldLabel": "Last Name",
-                        "labelWidth": 150,
-                        "name": "lastName"
-                    },
-                    "designerId": "cf6aef5b-43f7-4db2-a4f0-bccee3a75123"
+                    "designerId": "2d08e45f-a60c-4f61-8e9e-5f641bf569dc",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "maxWidth": 160,
+                                "width": 160,
+                                "fieldLabel": "First Name",
+                                "labelAlign": "top",
+                                "labelWidth": 160,
+                                "name": "firstName",
+                                "allowBlank": false,
+                                "emptyText": null
+                            },
+                            "designerId": "fb56f402-c201-43a6-93d7-60d91b86f7f0"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "margin": "0 0 0 5",
+                                "width": 90,
+                                "fieldLabel": "Middle Name",
+                                "labelAlign": "top",
+                                "labelWidth": 0,
+                                "name": "middleName"
+                            },
+                            "designerId": "41093987-620d-4751-97f8-807d05af39ba"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 2,
+                                "margin": "0 0 0 5",
+                                "maxWidth": 160,
+                                "width": 160,
+                                "fieldLabel": "Last Name",
+                                "labelAlign": "top",
+                                "labelWidth": 0,
+                                "name": "lastName",
+                                "allowBlank": false,
+                                "emptyText": null
+                            },
+                            "designerId": "cf6aef5b-43f7-4db2-a4f0-bccee3a75123"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.Text",
@@ -184,10 +215,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": null,
+                        "id": "status_combo",
+                        "itemId": "status_combo",
                         "width": 300,
                         "fieldLabel": "Status",
                         "labelWidth": 150,
                         "name": "status",
+                        "value": null,
                         "selectOnFocus": true,
                         "displayField": "name",
                         "forceSelection": true,

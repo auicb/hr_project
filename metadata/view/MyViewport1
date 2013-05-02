@@ -1,0 +1,34 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport1"
+    },
+    "designerId": "6cddb774-5562-4129-a62e-203a13b1be50",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "ce8d7990-cdd0-42bf-a705-5d4fc72abd5c",
+            "masterInstanceId": "4c63da0a-95a7-4c09-866e-67033debff8d"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "fc455aa0-0546-4404-8fc4-813f2f64ab31",
+            "masterInstanceId": "cf558478-3390-444e-8032-d9b00e1f47ef"
+        }
+    ]
+}
