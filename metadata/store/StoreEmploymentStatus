@@ -1,0 +1,19 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "mdEmploymentStatus",
+        "storeId": "StoreEmploymentStatus",
+        "designer|userClassName": "StoreEmploymentStatus",
+        "data": [
+            "[{code: '1',\r",
+            "  name: 'All'}]"
+        ]
+    },
+    "designerId": "a30fe8f0-a021-41cb-84ea-ff8d71778502"
+}

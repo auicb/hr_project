@@ -84,6 +84,7 @@ Ext.define('MyApp.controller.MyController', {
         }
     },
 
+<<<<<<< HEAD
     onAddCombobox: function(component, eOpts) {
         /*var combo = Ext.getCmp('status_combo');
         combo.setValue("1");*/
@@ -99,6 +100,76 @@ Ext.define('MyApp.controller.MyController', {
         console.log("Controll----------afterlender combobox");
 
         combo.setValue(val);
+=======
+    onSearchEmp: function(button, e, eOpts) {
+
+        console.log('Controll----------SearchEmp');
+
+        /*var searchValue = Ext.getCmp('formsearch');
+        console.log(searchValue);
+        store.load();*/
+
+        /*
+        var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        Store.load();*/
+
+
+        /*var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        var data = ["firstName", "empId"]
+        console.log(data);
+        Store.loadData(data);*/
+
+
+        /*   Ext.getCmp('formsearch');
+        var data = grid.getSelectionModel().selected.items[0].data;
+
+        console.log(data);
+        store.clearFilter();
+        store.filter('mygridpanel', data.productsCat);
+        */
+
+
+        /*var Store = Ext.getStore('StoreEmp');
+        console.log(Store);
+        var grid = Ext.getCmp('mygridpanel');
+
+        store.filterBy(id); 
+        Store.load();*/
+
+
+
+        /*var Store = Ext.getStore('StoreEmp');
+
+        Store.filter('empId', Ext.getCmp('idemp').getValue());
+
+        ค้นหาได้*/
+
+        var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        Store.filter('Emp Id', '');
+
+
+
+
+
+
+
+
+
+
+
+    },
+
+    onResetSearchEmp: function(button, e, eOpts) {
+        console.log('Controll----------ResetSearchEmp');
+
+
+
+        Ext.getCmp('formsearch').getForm().reset(); 
+
+>>>>>>> origin/miw
     },
 
     init: function(application) {
@@ -115,8 +186,16 @@ Ext.define('MyApp.controller.MyController', {
             "#bt_delEmp": {
                 click: this.onSelectGriddeletedata
             },
+<<<<<<< HEAD
             "windowAddEmp #status_combo": {
                 afterrender: this.onAddCombobox
+=======
+            "#bt_SearchEmp": {
+                click: this.onSearchEmp
+            },
+            "#bt_ResetEmp": {
+                click: this.onResetSearchEmp
+>>>>>>> origin/miw
             }
         });
     }

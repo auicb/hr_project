@@ -20,11 +20,19 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'mdStatus'
+        'mdStatus',
+        'mdInclude',
+        'mdEmploymentStatus',
+        'mdJobTitle',
+        'mdSubUnit'
     ],
     stores: [
         'StoreEmp',
-        'StoreStatus'
+        'StoreStatus',
+        'StoreInclude',
+        'StoreEmploymentStatus',
+        'StoreJobTitle',
+        'StoreSubUnit'
     ],
     views: [
         'MyViewport',

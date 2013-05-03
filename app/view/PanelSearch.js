@@ -32,6 +32,8 @@ Ext.define('MyApp.view.PanelSearch', {
                 {
                     xtype: 'form',
                     height: 539,
+                    id: 'formsearch',
+                    itemId: 'formsearch',
                     layout: {
                         type: 'absolute'
                     },
@@ -54,7 +56,14 @@ Ext.define('MyApp.view.PanelSearch', {
                             width: 220,
                             fieldLabel: 'Include',
                             labelAlign: 'top',
-                            name: 'Include'
+                            name: 'Include',
+                            emptyText: 'Current Employees Only',
+                            selectOnFocus: true,
+                            displayField: 'name',
+                            forceSelection: true,
+                            queryMode: 'local',
+                            store: 'StoreInclude',
+                            valueField: 'code'
                         },
                         {
                             xtype: 'combobox',
@@ -64,12 +73,19 @@ Ext.define('MyApp.view.PanelSearch', {
                             fieldLabel: 'Employment Status',
                             labelAlign: 'top',
                             name: 'EmploymentStatus',
-                            emptyText: 'All'
+                            selectOnFocus: true,
+                            displayField: 'name',
+                            forceSelection: true,
+                            queryMode: 'local',
+                            store: 'StoreEmploymentStatus',
+                            valueField: 'code'
                         },
                         {
                             xtype: 'textfield',
                             x: 380,
                             y: 10,
+                            id: 'idemp',
+                            itemId: 'idemp',
                             width: 230,
                             fieldLabel: 'Id',
                             labelAlign: 'top',
@@ -93,7 +109,14 @@ Ext.define('MyApp.view.PanelSearch', {
                             width: 230,
                             fieldLabel: 'Job Title',
                             labelAlign: 'top',
-                            name: 'JobTitle'
+                            name: 'JobTitle',
+                            emptyText: 'All',
+                            selectOnFocus: true,
+                            displayField: 'name',
+                            forceSelection: true,
+                            queryMode: 'local',
+                            store: 'StoreJobTitle',
+                            valueField: 'code'
                         },
                         {
                             xtype: 'combobox',
@@ -102,13 +125,22 @@ Ext.define('MyApp.view.PanelSearch', {
                             width: 240,
                             fieldLabel: 'Sub Unit',
                             labelAlign: 'top',
-                            name: 'SubUnit'
+                            name: 'SubUnit',
+                            emptyText: 'All',
+                            selectOnFocus: true,
+                            displayField: 'name',
+                            forceSelection: true,
+                            queryMode: 'local',
+                            store: 'StoreSubUnit',
+                            valueField: 'code'
                         },
                         {
                             xtype: 'button',
                             x: 70,
                             y: 150,
                             height: 30,
+                            id: 'bt_SearchEmp',
+                            itemId: 'bt_SearchEmp',
                             width: 90,
                             text: 'Search'
                         },
@@ -117,6 +149,8 @@ Ext.define('MyApp.view.PanelSearch', {
                             x: 200,
                             y: 150,
                             height: 30,
+                            id: 'bt_ResetEmp',
+                            itemId: 'bt_ResetEmp',
                             width: 90,
                             text: 'Reset'
                         }

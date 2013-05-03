@@ -94,6 +94,7 @@
             ],
             "className": "mdStatus"
         },
+<<<<<<< HEAD
         "d0ac6144-aad4-4ef0-b48b-ca5a10c1849f": {
             "paths": [
                 "metadata/resource/css"
@@ -123,6 +124,71 @@
                 "app/view/MyViewport1.js"
             ],
             "className": "MyViewport1"
+=======
+        "6993d0bf-be43-47ed-b1cf-b086ee0b969c": {
+            "paths": [
+                "metadata/store/StoreInclude",
+                "app/store/override/StoreInclude.js",
+                "app/store/StoreInclude.js"
+            ],
+            "className": "StoreInclude"
+        },
+        "1245d0f2-3b5f-4d20-8b3c-c27783ac5f24": {
+            "paths": [
+                "metadata/model/mdInclude",
+                "app/model/override/mdInclude.js",
+                "app/model/mdInclude.js"
+            ],
+            "className": "mdInclude"
+        },
+        "a30fe8f0-a021-41cb-84ea-ff8d71778502": {
+            "paths": [
+                "metadata/store/StoreEmploymentStatus",
+                "app/store/override/StoreEmploymentStatus.js",
+                "app/store/StoreEmploymentStatus.js"
+            ],
+            "className": "StoreEmploymentStatus"
+        },
+        "9837a792-5284-47e2-9f87-6c2db4fec347": {
+            "paths": [
+                "metadata/model/mdEmploymentStatus",
+                "app/model/override/mdEmploymentStatus.js",
+                "app/model/mdEmploymentStatus.js"
+            ],
+            "className": "mdEmploymentStatus"
+        },
+        "0c39d722-8f6a-4482-8e6b-2caf1b9a044f": {
+            "paths": [
+                "metadata/store/StoreJobTitle",
+                "app/store/override/StoreJobTitle.js",
+                "app/store/StoreJobTitle.js"
+            ],
+            "className": "StoreJobTitle"
+        },
+        "aed29f93-1412-4ca1-bfd1-aecbd9c19cb6": {
+            "paths": [
+                "metadata/model/mdJobTitle",
+                "app/model/override/mdJobTitle.js",
+                "app/model/mdJobTitle.js"
+            ],
+            "className": "mdJobTitle"
+        },
+        "aa3900e0-4183-4c53-b30b-88739a804f00": {
+            "paths": [
+                "metadata/store/StoreSubUnit",
+                "app/store/override/StoreSubUnit.js",
+                "app/store/StoreSubUnit.js"
+            ],
+            "className": "StoreSubUnit"
+        },
+        "f9886fa3-70d1-413a-93ff-0b6156afe266": {
+            "paths": [
+                "metadata/model/mdSubUnit",
+                "app/model/override/mdSubUnit.js",
+                "app/model/mdSubUnit.js"
+            ],
+            "className": "mdSubUnit"
+>>>>>>> origin/miw
         }
     },
     "viewOrderMap": {
@@ -137,7 +203,11 @@
         ],
         "store": [
             "7847cf2e-d98e-4074-82c2-67a2925f03da",
-            "22c6e8c4-8f02-4d9b-9f21-b27f27b56472"
+            "22c6e8c4-8f02-4d9b-9f21-b27f27b56472",
+            "6993d0bf-be43-47ed-b1cf-b086ee0b969c",
+            "a30fe8f0-a021-41cb-84ea-ff8d71778502",
+            "0c39d722-8f6a-4482-8e6b-2caf1b9a044f",
+            "aa3900e0-4183-4c53-b30b-88739a804f00"
         ],
         "controller": [
             "4e90cb52-bbd1-4049-adaf-bc01ad9e2706"
@@ -145,7 +215,11 @@
         "model": [
             "f413509b-4b17-48b1-8747-7cc966c69ffa",
             "0ce7c3ea-2871-41a7-a00d-aa3cbcb3b427",
-            "e5b61d9b-bdb9-446d-a01b-abdb19afdc64"
+            "e5b61d9b-bdb9-446d-a01b-abdb19afdc64",
+            "1245d0f2-3b5f-4d20-8b3c-c27783ac5f24",
+            "9837a792-5284-47e2-9f87-6c2db4fec347",
+            "aed29f93-1412-4ca1-bfd1-aecbd9c19cb6",
+            "f9886fa3-70d1-413a-93ff-0b6156afe266"
         ],
         "resource": [
             "c651df90-ec62-4eb0-a4b4-9cd6c27d7932",

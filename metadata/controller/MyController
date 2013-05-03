@@ -152,6 +152,7 @@
             },
             "codeClass": null,
             "userConfig": {
+<<<<<<< HEAD
                 "fn": "onAddCombobox",
                 "implHandler": [
                     "/*var combo = Ext.getCmp('status_combo');\r",
@@ -174,10 +175,85 @@
             "type": "basicfunction",
             "reference": {
                 "name": "items",
+=======
+                "fn": "onSearchEmp",
+                "implHandler": [
+                    "\r",
+                    "console.log('Controll----------SearchEmp');\r",
+                    "\r",
+                    "/*var searchValue = Ext.getCmp('formsearch');\r",
+                    "console.log(searchValue);\r",
+                    "store.load();*/\r",
+                    "\r",
+                    "/*\r",
+                    "var Store = Ext.getStore('StoreEmp');\r",
+                    "Ext.getCmp('formsearch');\r",
+                    "Store.load();*/\r",
+                    "\r",
+                    "\r",
+                    "/*var Store = Ext.getStore('StoreEmp');\r",
+                    "Ext.getCmp('formsearch');\r",
+                    "var data = [\"firstName\", \"empId\"]\r",
+                    "console.log(data);\r",
+                    "Store.loadData(data);*/\r",
+                    "\r",
+                    "\r",
+                    "/*   Ext.getCmp('formsearch');\r",
+                    "var data = grid.getSelectionModel().selected.items[0].data;\r",
+                    "\r",
+                    "console.log(data);\r",
+                    "store.clearFilter();\r",
+                    "store.filter('mygridpanel', data.productsCat);\r",
+                    "*/\r",
+                    "\r",
+                    "\r",
+                    "/*var Store = Ext.getStore('StoreEmp');\r",
+                    "console.log(Store);\r",
+                    "var grid = Ext.getCmp('mygridpanel');\r",
+                    "\r",
+                    "store.filterBy(id); \r",
+                    "Store.load();*/\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "/*var Store = Ext.getStore('StoreEmp');\r",
+                    "\r",
+                    "Store.filter('empId', Ext.getCmp('idemp').getValue());\r",
+                    "\r",
+                    "ค้นหาได้*/\r",
+                    "\r",
+                    "var Store = Ext.getStore('StoreEmp');\r",
+                    "Ext.getCmp('formsearch');\r",
+                    "Store.filter('Emp Id', '');\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_SearchEmp"
+            },
+            "designerId": "f60c9b95-bb28-42ef-a6ce-3d58334e8ceb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+>>>>>>> origin/miw
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
+<<<<<<< HEAD
                 "fn": "loadCombobox",
                 "designer|params": [
                     "combo",
@@ -190,6 +266,23 @@
                 ]
             },
             "designerId": "4eb15170-3ce4-40bf-8f45-282755da0fc0"
+=======
+                "fn": "onResetSearchEmp",
+                "implHandler": [
+                    "console.log('Controll----------ResetSearchEmp');\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "Ext.getCmp('formsearch').getForm().reset(); \r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#bt_ResetEmp"
+            },
+            "designerId": "3d1da03d-bf78-41aa-87be-5896d85cad94"
+>>>>>>> origin/miw
         }
     ]
 }
