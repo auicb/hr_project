@@ -122,9 +122,15 @@ Ext.define('MyApp.controller.MyController', {
 
 
 
-        var Store = Ext.getStore('StoreEmp');
+        /*var Store = Ext.getStore('StoreEmp');
 
         Store.filter('empId', Ext.getCmp('idemp').getValue());
+
+        ค้นหาได้*/
+
+        var Store = Ext.getStore('StoreEmp');
+        Ext.getCmp('formsearch');
+        Store.filter('Emp Id', '');
 
 
 
